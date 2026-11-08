@@ -8,9 +8,11 @@ https://sspeth000.github.io/webarchiveviewer
 
 ## Current stage
 
-This first milestone decodes the property-list container and displays its structure. It supports XML property lists, Apple's `bplist00` binary property lists, Base64 data decoding, and byte-level reading utilities.
+The app decodes XML and Apple's `bplist00` binary property lists, then recursively extracts raw `WebResourceData` from the main archive, subresources, and nested subframe archives. Extracted resources are listed with their URL, MIME type, size, and a suggested path, and can be downloaded individually.
 
-No third-party packages, external decoding services, or network requests are used by the decoder. Files are processed locally in the browser.
+The decoder and extractor use browser-native JavaScript and process files locally. No third-party packages or external decoding services are used.
+
+Website reconstruction/rendering and ZIP export are not implemented yet.
 
 ## Project layout
 
@@ -23,7 +25,6 @@ No third-party packages, external decoding services, or network requests are use
     ├── ByteReader.js
     ├── Base64.js
     ├── PlistXML.js
-    └── PlistBinary.js
+    ├── PlistBinary.js
+    └── ResourceExtractor.js
 ```
-
-Website resource extraction and rendering are intentionally not implemented yet.
