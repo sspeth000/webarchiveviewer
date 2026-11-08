@@ -1,2 +1,29 @@
 # webarchiveviewer
-This is a project that attempts to run iOS’s safari “.webarchive” files, in your browser.
+
+A from-scratch, browser-based viewer for Apple Safari `.webarchive` files.
+
+## GitHub Pages
+
+This repository is structured as a static site. In **Settings → Pages**, choose **Deploy from a branch**, select **main** and **/(root)**, then save. The site entry point is `index.html`.
+
+## Current stage
+
+This first milestone decodes the property-list container and displays its structure. It supports XML property lists, Apple's `bplist00` binary property lists, Base64 data decoding, and byte-level reading utilities.
+
+No third-party packages, external decoding services, or network requests are used by the decoder. Files are processed locally in the browser.
+
+## Project layout
+
+```
+/
+├── index.html
+├── styles.css
+├── app.js
+└── src/
+    ├── ByteReader.js
+    ├── Base64.js
+    ├── PlistXML.js
+    └── PlistBinary.js
+```
+
+Website resource extraction and rendering are intentionally not implemented yet.
