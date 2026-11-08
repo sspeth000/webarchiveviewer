@@ -4,7 +4,7 @@ A from-scratch, browser-based viewer for Apple Safari `.webarchive` files.
 
 ## GitHub Pages
 
-(https://sspeth000.github.io/webarchiveviewer/)
+https://sspeth000.github.io/webarchiveviewer
 
 ## Current stage
 
