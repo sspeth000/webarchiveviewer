@@ -4,7 +4,7 @@ A from-scratch, browser-based viewer for Apple Safari `.webarchive` files.
 
 ## GitHub Pages
 
-This repository is structured as a static site. In **Settings → Pages**, choose **Deploy from a branch**, select **main** and **/(root)**, then save. The site entry point is `index.html`.
+(https://sspeth000.github.io/webarchiveviewer/)
 
 ## Current stage
 
