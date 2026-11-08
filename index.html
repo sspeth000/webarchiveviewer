@@ -24,7 +24,7 @@
         <span class="muted">or drag and drop it here</span>
         <span class="browse">Browse files</span>
       </label>
-      <p class="privacy-note">Your file stays on this device. This build decodes the archive structure; website rendering comes later.</p>
+      <p class="privacy-note">Your file stays on this device. Decode the archive and download its embedded page resources. Website rendering comes later.</p>
     </section>
     <section class="results" id="results" hidden>
       <div class="result-heading">
@@ -36,6 +36,10 @@
         <article><span>FILE SIZE</span><strong id="sizeValue">—</strong></article>
         <article><span>ROOT TYPE</span><strong id="rootValue">—</strong></article>
       </div>
+      <section class="panel resource-panel" id="resourcePanel" hidden>
+        <div class="panel-heading"><strong>Extracted resources</strong><span id="resourceCount">0 found</span></div>
+        <div id="resourceList" class="resource-list"></div>
+      </section>
       <div class="panel">
         <div class="panel-heading"><strong>Decoded property list</strong><span id="status">Ready</span></div>
         <pre id="output"></pre>
